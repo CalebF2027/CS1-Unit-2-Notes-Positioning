@@ -4,6 +4,32 @@ img {
 
 #absolute {
     position: absolute;
-    bottom: 90%;
-    right: 15%;
+    top: 90%;
+    left: 10%;
 }
+
+/*DIVs are normally BLOCK elements, but we can change that with the display property */
+#container-rel {
+    background-color: pink;
+    display: inline-block;
+}
+
+#relative {
+    position: relative;
+    top: 200px;
+    right: -25px;
+    z-index: 50;
+    /* z-index affects DEPTH of positioned elements */
+}
+
+#fixed {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+body {
+    background-color: aqua;
+    height: 200%
+}
+
